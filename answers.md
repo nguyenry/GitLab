@@ -16,7 +16,7 @@ Git nor I need the whole SHA.)
 d1d83316
 
 3. What did line 12 of this file say in commit d1d83?
-2. I should really finish writing this.
+"2. I should really finish writing this."
 
 4. What changed between commit e474c and 82045?
 gross_sort = lambda x : x["Gross"] -> gross_sort = lambda x : int(x["Gross"])
@@ -42,6 +42,7 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
+This merges top_N onto test, meaning test would change to be the same as top_N.
 
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -49,6 +50,7 @@ What branches would change, and how?
 git checkout top_ten
 git merge test
 ```
+This would merge test onto top_ten, meaning top_ten would change to be the same as test.
 
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -57,3 +59,4 @@ git checkout test
 git rebase top_ten
 git rebase top_N
 ```
+I think that this will make test change to be the same as top_ten and the change test again to be the same as top_N.
