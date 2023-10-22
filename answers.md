@@ -42,7 +42,7 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
-This merges top_N onto test, meaning test would change to be the same as top_N.
+This merges top_N onto test, meaning test would have the same changes as top_N does.
 
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -50,7 +50,7 @@ What branches would change, and how?
 git checkout top_ten
 git merge test
 ```
-This would merge test onto top_ten, meaning top_ten would change to be the same as test.
+This would merge test onto top_ten, meaning top_ten would have the same changes as test does.
 
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -59,4 +59,4 @@ git checkout test
 git rebase top_ten
 git rebase top_N
 ```
-I think that this will make test change to be the same as top_ten and the change test again to be the same as top_N.
+This will give us a merge conflict and annotate segments of the code that are different. Once we resolve those conflicts test will reflect whatever changes we manually made in top_ten and top_N to resolve the conflict.
